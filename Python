@@ -1,0 +1,182 @@
+
+# These are the different lines A.K.A Drink, Main Course, Salad, Sauces.
+line1= ""
+line2= ""
+line3= ""
+line4= ""
+line5= ""
+line6= ""
+# This is how the teacher will edit the grade level information
+grade1=""
+#
+counter = 3
+authorized = False
+
+data={}
+#with open("user.txt", "r") as f:
+# add as many as needed in "ex1:ex2 "
+for line in "test_user:test_password","IT:1rks0me_T3chnol0gy", "ben_admin:duckssaymoo", "Donovan:54321":
+    name,password = line.strip().split(":")
+    data[str(name)]=str(password)
+####################################
+
+while authorized is False: 
+    print "Log In"
+    username = input ("Username : ")
+    pword = input ("Password : ")
+
+    # Check if the user exists in the database or not
+    if username not in data.keys():
+        print "Are you new around here? How about we try again?"
+        counter = counter - 1
+    else:
+        # Check if the input password matches the database password
+        if data[username] == pword :
+            print "Welcome back " + username + "!"
+            authorized = True
+        else:
+            print "404 password not found"
+            counter = counter - 1
+    if counter == 0:
+        print "Limit try reached. Bye!"
+        break
+if authorized is True:
+    editing = True
+    while editing:
+        print("You are now editing drinks.")
+        line1=input("~ ") or line1
+        print("You are now cooking the main course.")
+        line2=input("~ ") or line2
+        print("You are now preparing the side dish.")
+        line3=input("~ ") or line3
+        print("You are now tossing the salad bar.")
+        line4=input("~ ") or line4
+        print("You are now mixing the sauceset sauces")
+        line5=input("~ ") or line5
+        print("you are now setting lunch room grade level.")
+        grade1=input("~ ") or grade1
+        editing = input("Do you want to edit your choices? [y/n] ")
+        print("")
+        print("[Drink]"+line1)
+        print("[Main Course]"+line2)
+        print("[Side]"+line3)
+        print("[Salad]"+line4)
+        print("[Sauces]"+line5)
+        print("[Grade Level]"+grade1)
+        if editing.lower() != "y":
+            editing = False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#DO NOT MESS WITH THIS
+#THE ENTIRE THING WILL STOP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#YES YOU
+
+
+
+
+
+
+
+
+#STOP 
+
+
+
+
+
+
+#PLZ?
+
+
+
+
+
+#Why do you do this to your self?
+
+
+
+
+
